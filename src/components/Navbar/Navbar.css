@@ -1,0 +1,98 @@
+nav {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  10px 10%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+    transition: all 0.5s ease-in-out;
+
+}
+
+nav.darknav {
+    background-color: blue;
+}
+
+.logo {
+    font-size:  20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.list {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    align-items: center;
+    
+}
+
+.contact {
+    background-color: white;
+    padding:  5px 10px;
+    color: black;
+    border-radius: 10px;
+}
+.hamburger {
+    display: none;
+}
+
+.hamburger div {
+    width: 25px ;
+    height: 3px ;
+    margin: 5px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .hamburger.active .line1 {
+        transform: rotate(-45deg) translate(-12px);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .hamburger.active .line2 {
+        opacity: 0;
+    }
+
+    .hamburger.active .line3 {
+        transform: rotate(45deg) translate(-10px);
+        transition: all 0.5s ease-in-out;
+    }
+    
+   .list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: orangered;
+        right: 0;
+        top: 50px;
+        left: 0;
+        padding-top:  40px;
+        transform:  scale(0);
+        height: 60vh;
+        transition: all 0.5s ease-in-out;
+        
+    }
+
+    .list.active {
+        transform: scale(1);
+        
+    }
+}
+
+
+
+
+
+
+

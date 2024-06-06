@@ -1,0 +1,32 @@
+.hero {
+    padding: 0 10%;
+    position: absolute;
+    top: 40%;
+    color:  white;
+}
+
+.hero p {
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 5px;
+}
+.explore {
+    background-color: white;
+    color:  black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 50px;
+    margin-top: 40px;
+    width: 200px;
+   padding:  5px 10px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+.explore img {
+    width: 40px;
+    
+}
+
